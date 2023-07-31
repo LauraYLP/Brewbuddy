@@ -2,6 +2,7 @@ const userStore = {
     currentUser: null,
 };
 
+// Prep for the events/interaction from user
 window.addEventListener("load", () => {
     const modalWrapper = document.querySelector('#modal-wrapper');
     const modalBg = modalWrapper.querySelector('#modal-wrapper-bg');
@@ -27,7 +28,7 @@ window.addEventListener("load", () => {
             ${data.text}
         `;
     };
-
+    // User interaction events: log/signup
     const showLoginModal = () => {
         modalWrapper.style.display = 'flex';
 
@@ -46,7 +47,7 @@ window.addEventListener("load", () => {
                 <button class="login-button primary-button">Login</button>
             </form>
         `;
-
+        // user input field. 
         const error = modalContent.querySelector('.error');
         const userInput = modalContent.querySelector('.login-username');
         const passInput = modalContent.querySelector('.login-password');
@@ -70,13 +71,13 @@ window.addEventListener("load", () => {
             }
         });
     };
-
+    // Event: Coffee Consumptions Counter
     const showAddCoffeeModal = () => {
         modalWrapper.style.display = 'flex';
 
         modalHeader.innerHTML = 'Select your coffee';
-
-        const coffeeStore = {
+        //Define coffeeType
+        const coffeeType = {
             selectedCoffee: null,
         };
         const describeCoffee = (coffee) => `
@@ -103,11 +104,11 @@ window.addEventListener("load", () => {
             ${coffeesDiv}
             <button class="primary-button add-coffee-button">Add coffee</button>
         `;
-
+        //Once user selected their coffee short-cut, the background will change to white to identified the selection
         const updateChips = () => {
             modalContent.querySelectorAll('.coffee-chip').forEach((chip) => {
                 const id = chip.getAttribute('data-coffee-id');
-                if (coffeeStore.selectedCoffee.id == id) {
+                if (coffeeType.selectedCoffee.id == id) {
                     chip.classList.add('selected');
                 } else {
                     chip.classList.remove('selected');
@@ -118,18 +119,20 @@ window.addEventListener("load", () => {
         modalContent.querySelectorAll('.coffee-chip').forEach((chip) => {
             const id = chip.getAttribute('data-coffee-id');
             chip.addEventListener('click', () => {
-                coffeeStore.selectedCoffee = COFFEE_OPTIONS.find((e) => e.id == id);
+                coffeeType.selectedCoffee = COFFEE_OPTIONS.find((e) => e.id == id);
                 updateChips();
             });
         });
+        //Too prvents human error, user has to slected one option before adding coffee
         modalContent.querySelector('.add-coffee-button').addEventListener('click', () => {
             const error = modalContent.querySelector('.error');
-            if (coffeeStore.selectedCoffee == null) {
+            if (coffeeType.selectedCoffee == null) {
                 error.innerHTML = 'Please select a coffee.';
             } else {
+                //Requirments: Use of variables and arrays to store and manipulate data (text or numbers)
                 error.innerHTML = '';
                 userStore.currentUser.cups++;
-                userStore.currentUser.mg += coffeeStore.selectedCoffee.mg;
+                userStore.currentUser.mg += coffeeType.selectedCoffee.mg;
                 updateLoginData();
                 hideModal();
             }
@@ -173,7 +176,7 @@ window.addEventListener("load", () => {
 
         updateCoffeeCup();
     }
-
+    // Fullfield requirments: Use of a mathematical function to display or manipulate information on the screen
     const updateCoffeeCup = () => {
         const login = userStore.currentUser;
         if (login) {
@@ -196,7 +199,7 @@ window.addEventListener("load", () => {
             }
         }
     };
-
+    // User event: triggered speech bubble to change from good to bad-job dialog 
     const showGoodJobDialog = (wrapper) => {
         const div = document.createElement("div");
         div.classList.add('good-job-dialog');
@@ -207,7 +210,7 @@ window.addEventListener("load", () => {
         `;
         wrapper.appendChild(div);
     };
-
+    
     const showWatchOutDialog = (wrapper) => {
         const div = document.createElement("div");
         div.classList.add('bad-job-dialog');
@@ -218,7 +221,7 @@ window.addEventListener("load", () => {
         `;
         wrapper.appendChild(div);
     };
-
+    // Fun-fact pop up, click outside to hide it (inlucding the closed windown button)
     modalBg.addEventListener('click', hideModal);
     modalClose.addEventListener('click', hideModal);
 

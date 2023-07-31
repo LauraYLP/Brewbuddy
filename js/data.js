@@ -2,14 +2,14 @@
 const LOGIN_DATA = [
     { username: 'Johnson', password: '123', cups: 4, mg: 200, goal: 2 },
     { username: 'asd', password: 'asd', cups: 1, mg: 200, goal: 2 },
-    { username: 'Maria', password: '123', cups: 0, mg: 200, goal: 2 }
+    { username: 'Maria', password: '123', cups: 1, mg: 200, goal: 3 }
 ];
 
 // Fun facts coffee chip stroaged text
 const FUN_FACTS = [
     {
         image: 'imgs/fun-facts/fun-fact-1.svg',
-        title: 'COFFEE IS ACTUALLY A FRUIT',
+        title: 'Coffee Is Actually A Fruit',
         text: 'They are the pits of the cherry-like berries found on the flowering shrubs, but we call them "beans" because of the resemblance to legumes.',
     },
     {
