@@ -58,6 +58,9 @@ h1, h2 {
   font-family: "poppins";
 }
 
+body.main.container.a{
+  text-decoration: none;
+}
 @media screen and (max-width: 480px) {
   .text-center {
     width: 100%;
