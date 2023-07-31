@@ -23,12 +23,11 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* hr { */
-  /* -webkit-box-sizing: content-box; */
-  /* box-sizing: content-box;
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
-  overflow: visible;
-  } */
+  overflow: visible; }
 
 pre {
   font-family: monospace, monospace;
@@ -189,14 +188,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* background: #fefefe; */
+  background: #fefefe;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  }
+  -moz-osx-font-smoothing: grayscale; }
 
 img {
   display: inline-block;
@@ -2282,16 +2280,15 @@ a {
   a img {
     border: 0; }
 
-/* hr { */
-  /* clear: both; */
-  /* max-width: 75rem; */
-  /* height: 0; */
-  /* margin: 1.25rem auto; */
-  /* border-top: 0; */
-  /* border-right: 0; */
-  /* border-bottom: 1px solid #cacaca; */
-  /* border-left: 0; */
-  /* } */
+hr {
+  clear: both;
+  max-width: 75rem;
+  height: 0;
+  margin: 1.25rem auto;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #cacaca;
+  border-left: 0; }
 
 ul,
 ol,
@@ -3355,7 +3352,7 @@ select {
   margin-bottom: 1rem;
   border: 1px solid #e6e6e6;
   border-radius: 0;
-  
+  background: #fefefe;
   -webkit-box-shadow: none;
           box-shadow: none;
   overflow: hidden;
@@ -3373,7 +3370,7 @@ select {
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
   padding: 1rem;
-   }
+  background: #e6e6e6; }
   .card-divider > :last-child {
     margin-bottom: 0; }
 
@@ -3402,9 +3399,8 @@ select {
   .callout > :last-child {
     margin-bottom: 0; }
   .callout.primary {
-    /* background-color: #d7ecfa; */
-    /* color: #0a0a0a; */
-    }
+    background-color: #d7ecfa;
+    color: #0a0a0a; }
   .callout.secondary {
     background-color: #eaeaea;
     color: #0a0a0a; }
@@ -3734,7 +3730,6 @@ select {
   vertical-align: middle;
   width: 20px;
   height: 16px;
-  background-color: #533117;
   cursor: pointer; }
   .menu-icon::after {
     position: absolute;
@@ -3743,7 +3738,7 @@ select {
     display: block;
     width: 100%;
     height: 2px;
-    background: #533117;
+    background: #fefefe;
     -webkit-box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe;
             box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe;
     content: ''; }
