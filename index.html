@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Brew Buddy</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/ae5425cf4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="js/utils.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--Side navigation bar. Deisgn by Satvhika, code by Sathvika & Johnson-->
+            <ul class="side-nav">
+                <a id='logo' href="#">
+                    <img src="imgs/logo.png" width="32px" alt="logo">
+                    <img src="imgs/brewbuddy.png" alt="Brew Buddy">
+                </a>
+                <br />
+                <!--Button with hover effects that changes color to increase accessibility /user-awareness-->
+                <li class="selected"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href=""><img src="imgs/task-icon.png" alt="Tasks">Task</a></li>
+                <li><a href="activity.html"><i class="fa-regular fa-calendar"></i>Activity</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                <li><a href="tutorial.html"><i class="fa-solid fa-graduation-cap"></i>Tutorial</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+            </ul>
+            <!--Right corner section contains copyright & social media shortcut -->
+            <ul class="bottom-side-nav">
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <br />
+                <h1 class="copyright">
+                    &#169;copyright 2023<br />
+                    <span>BrewBuddy</span> all rights reserved
+                </h1>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Upper right corner login/sign up fucntion -->
+        <div class="header-bar">
+            <div class="header-bar-right logged-out-area">
+                <img src="imgs/profile-icon.png" alt="login/logout icon">
+                <a class="login-button">Login</a> |&nbsp; <a href="signup.html">Signup</a>
+            </div>
+            <div class="header-bar-right logged-area">
+                <!--'Hello' indecation for user to identifed login status -->
+                Hello, <span class="login-username"></span> |
+                <a class="logout-button">Logout</a>
+            </div>
+        </div>
+        <hr />
+        <!--Main interactive: Adding Coffee -->
+        <div class="main-content grid-x">
+            <div class="column large-6 logged-area">
+                <p>
+                    <strong>Hello, <span class="login-username"></span>!</strong>
+                    Today's consumption ☕
+                </p>
+                <p>
+                    <span class="cups-counter"></span>
+                    <span class="mg-counter"></span>
+                </p>
+                <div class="coffee-cup-image"></div>
+                <div class="button-wrap">
+                    <button class="primary-button add-coffee-button">
+                        + Add Coffee
+                    </button>
+                </div>
+            </div>
+            <!--Secondary interactive: fun facts  -->
+            <div class="column large-6">
+                <div class="content-box">
+                    <h2>Fun facts about coffee</h2>
+                    <div class="row large-3 icons-set">
+                        <div><div data-fun-fact-id="0" class="icon-set-icon coffee-icon"></div></div>
+                        <div><div data-fun-fact-id="1" class="icon-set-icon coffee-icon"></div></div>
+                        <div><div data-fun-fact-id="2" class="icon-set-icon coffee-icon"></div></div>
+                        <div><div data-fun-fact-id="3" class="icon-set-icon coffee-icon"></div></div>
+                    </div>
+                    <div class="row large-3 icons-set">
+                        <div><div data-fun-fact-id="4" class="icon-set-icon coffee-icon"></div></div>
+                        <div><div data-fun-fact-id="5" class="icon-set-icon coffee-icon"></div></div>
+                        <div><div data-fun-fact-id="6" class="icon-set-icon coffee-icon"></div></div>
+                        <div><div data-fun-fact-id="7" class="icon-set-icon coffee-icon"></div></div>
+                    </div>
+                </div>
+                <!--Third interactive: symptoms (WIP)-->
+                <div class="content-box logged-area">
+                    <h2>Are you facing any caffeine withdraw symptoms?</h2>
+                    <p>Select any caffeine withdraw effects you faced today.</p>
+                <!--Hover button with changing color effects-->
+                    <div class="row large-4 icons-set">
+                        <div>
+                            <div class="icon-set-icon headache-icon"></div>
+                            <p>Headaches</p>
+                        </div>
+                        <div>
+                            <div class="icon-set-icon sweat-icon"></div>
+                            <p>Sweat</p>
+                        </div>
+                        <div>
+                            <div class="icon-set-icon other-icon"></div>
+                            <p>Other</p>
+                        </div>
+                    </div>
+
+                    <div class="button-wrap">
+                        <button class="primary-button" disabled>
+                            Save symptoms
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Feedback button, links to Contact forms-->
+        <div class="footer-message">
+            <a href="contact.html">
+                <span>Are you enjoying the app? We would love to hear your feedback!</span>
+                <span><i class="fa-solid fa-chevron-right"></i></span>    
+            </a>
+        </div>
+    </main>
+    <div id="modal-wrapper">
+        <div id="modal-wrapper-bg"></div>
+        <div id="modal">
+            <div class="close">x</div>
+            <p class="header">Header</p>
+            <div class="content"></div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Brew Buddy</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tutorial.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/ae5425cf4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="side-nav">
+                    <a id='logo' href="#">
+                        <img src="imgs/logo.png" width="32px" alt="logo">
+                        <img src="imgs/brewbuddy.png" alt="Brew Buddy">
+                    </a>
+                    <br />
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="task.html"><img src="imgs/task-icon.png" alt="Tasks">Task</a></li>
+                    <li><a href="activity.html"><i class="fa-regular fa-calendar"></i>Activity</a></li>
+                    <li><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li class="selected"><a href="tutorial.html"><i class="fa-solid fa-graduation-cap"></i>Tutorial</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+                </ul>
+                <ul class="bottom-side-nav">
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <br />
+                    <h1 class="copyright">
+                        &#169;copyright 2023<br />
+                        <span>BrewBuddy</span> all rights reserved
+                    </h1>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="header-bar">
+                <div class="header-bar-right logged-out-area">
+                    <img src="imgs/profile-icon.png" alt="login/logout icon">
+                    <a href="login.html">Login</a> |&nbsp; <a href="signup.html">Signup</a>
+                </div>
+                <div class="header-bar-right logged-area">
+                    Hello, <span class="login-username"></span> |
+                    <a class="logout-button">Logout</a>
+                </div>
+            </div>
+            <!--Image slider within the grid system-->
+            <section class="grid-x">
+                <div class="cell large-4 medium-3 small-2"></div>
+                <div class="cell large-4 medium-6 small-8">
+                    <div class="container">
+                        <h1 class="big">Tutorial</h1>
+                        <div class="slider-outer">
+                            <img src="imgs/arrow-left.png" class="prev" alt="Prev">
+                            <div class="slider-inner">
+                                <img src="imgs/image1.png" class="active">
+                                <img src="imgs/image2.png">
+                                <img src="imgs/image3.png"> 
+                            </div>
+                            <img src="imgs/arrow-right.png" class="next" alt="Next">
+                        </div>
+                        <!--Text explaining each screen. Ideally this would switch with the image-->
+                        <ol start="1">
+                            <li>Track your intake! Set your coffee goals and monitor your coffee intake.</li>
+                            <li>Earn badges! Complete tasks personalized to you. Explore different ways for mindful coffee consumption.</li>
+                            <li>Visualize your habits! See what you do everyday & adjust!</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="cell large-4 medium-3 small-2"></div>
+            </section>
+        </main>
+        <script src="js/jquery-min.js"></script>
+        <script src="js/tutorial.js"></script>
+    </body>
+</html>

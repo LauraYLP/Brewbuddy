@@ -1,0 +1,66 @@
+/* Styling page used to overwrite elements that have otherwise already been modified in other css files */
+.big {
+  font-family: 'Poppins';
+  font-weight: 600;
+  text-align: center;
+  color: #F6813F;
+  margin: 0px 60px 20px 0px;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.container{
+  width: 540px;
+  margin: 40px auto;
+  overflow: auto;
+}
+
+.slider-inner{
+width: 300px;
+height: 500px;
+position: relative;
+overflow: hidden;
+float: left;
+padding: 3px;
+}
+
+.slider-inner img{
+  display: none;
+  width: 300px;
+  height: 500px;
+}
+
+.slider-inner img.active{
+  display: inline-block;
+}
+
+.prev,.next{
+  float: left;
+  margin-top:230px;
+  cursor: pointer;
+}
+
+.prev{
+  position: relative;
+  margin-right: 45px;
+  z-index: 100;
+}
+
+.next{
+  position: relative;
+  margin-left: 45px;
+  z-index: 100;
+}
+
+ol{
+  float: left;
+}
+
+ol li{
+  display: list-item;
+  list-style-position: inside;
+  margin-top: 20px;
+}

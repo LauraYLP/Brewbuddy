@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	
+	<title>Contact Us</title>
+</head>
+<body>
+	<header>
+        <nav>
+            <ul class="side-nav">
+                <a id='logo' href="#">
+                    <img src="imgs/logo.png" width="32px" alt="logo">
+                    <img src="imgs/brewbuddy.png" alt="Brew Buddy">
+                </a>
+                <br />
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href=""><img src="imgs/task-icon.png" alt="Tasks">Task</a></li>
+				<li><a href="activity.html"><i class="fa-regular fa-calendar"></i>Activity</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                <li><a href="tutorial.html"><i class="fa-solid fa-graduation-cap"></i>Tutorial</a></li>
+                <li class="selected"><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+            </ul>
+            <ul class="bottom-side-nav">
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <br />
+                <h1 class="copyright">
+                    &#169;copyright 2023<br />
+                    <span>BrewBuddy</span> all rights reserved
+                </h1>
+            </ul>
+        </nav>
+    </header>
+	<main>
+		<div class="header-bar">
+			<div class="header-bar-right logged-out-area">
+				<img src="imgs/profile-icon.png" alt="login/logout icon">
+				<a href="login.html">Login</a> |&nbsp; <a href="signup.html">Signup</a>
+			</div>
+			<div class="header-bar-right logged-area">
+				Hello, <span class="login-username"></span> |
+				<a class="logout-button">Logout</a>
+			</div>
+		</div>
+        <hr />
+        <div class="main-content grid-x">
+			<div class="container">
+				<h1 class="contact"><i class="fa-solid fa-envelope"></i> Contact us</h1>
+				<p class="contact">Fill the form our team will get back to you within 24hours</p>
+
+				<div class="contact-wrapper">
+					<div class="contact-form">
+						<form action="">
+							<p class="fields">
+								<label>First name</label>
+								<input type="text" name="fullname">
+							</p>
+							<p class="fields">
+								<label>Last name</label>
+								<input type="text" name="EmailAddress">
+							</p>
+							<p class="fields">
+								<label>Email Address</label>
+								<input type="email" name="Phone">
+							</p>
+							<p class="fields">
+								<label>Phone number</label>
+								<input type="tel" name="Affair">
+							</p>
+							<p class="block">
+								<label>Message</label>
+								<textarea name="message" rows="8"></textarea>
+							</p>
+							<p class="block">
+								<button type="submit">
+									Send message
+								</button>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

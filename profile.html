@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+	<title>Profile</title>
+</head>
+<body>
+	<header>
+        <nav>
+            <ul class="side-nav">
+                <a id='logo' href="#">
+                    <img src="imgs/logo.png" width="32px" alt="logo">
+                    <img src="imgs/brewbuddy.png" alt="Brew Buddy">
+                </a>
+                <br />
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href=""><img src="imgs/task-icon.png" alt="Tasks">Task</a></li>
+                <li><a href="activity.html"><i class="fa-regular fa-calendar"></i>Activity</a></li>
+                <li class="selected"><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                <li><a href="tutorial.html"><i class="fa-solid fa-graduation-cap"></i>Tutorial</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+            </ul>
+            <ul class="bottom-side-nav">
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <br />
+                <h1 class="copyright">
+                    &#169;copyright 2023<br />
+                    <span>BrewBuddy</span> all rights reserved
+                </h1>
+            </ul>
+        </nav>
+    </header>
+	<main>
+		<div class="header-bar">
+			<div class="header-bar-right logged-out-area">
+				<img src="imgs/profile-icon.png" alt="login/logout icon">
+				<a href="login.html">Login</a> |&nbsp; <a href="signup.html">Signup</a>
+			</div>
+			<div class="header-bar-right logged-area">
+				Hello, <span class="login-username"></span> |
+				<a class="logout-button">Logout</a>
+			</div>
+		</div>
+        <hr />
+        <div class="main-content grid-x">
+			<div class="container">
+				<div class="item profile">
+					<h1 id="profile">Profile</h1>
+					<img class="profile-img" src="imgs/maria.png" />	
+					<i class="fa-solid fa-camera camera_icon"></i>
+				</div>
+				
+				<div class="item user">
+					<h1 id="user">
+						Maria
+						<i class="fa-sharp fa-solid fa-pen" style="color:orange;"></i></i>
+						<i class="fa-sharp fa-solid fa-share-nodes" style="color:orange;"></i>
+					</h1>
+				</div>
+				
+				<div class="item fields">
+					<label>Email</label>
+					<input type="email" name="email" placeholder="Maria@gmail.com" /><hr>
+					<label>Password</label>
+					<input type="password" name="password2" placeholder="Change password" />
+				</div>
+				
+				<div class="item nav">
+					<div class="profile-nav">
+						<ul>
+							<li><a href="#"><i class="fa-solid fa-gear"></i> Settings <span class="profile-span">></span></a></li>
+							<li><a href="#"><i class="fa-solid fa-question"></i> Help <span class="profile-span">></span></a></li>
+							<li><a href="#"><i class="fa-solid fa-bullseye"></i> Change goals <span class="profile-span">></span></a></li>
+							<li><a href="#"><i class="fa-sharp fa-regular fa-bell"></i> Notification <span class="profile-span"></span></a></li>
+							<li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign out <span class="profile-span"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

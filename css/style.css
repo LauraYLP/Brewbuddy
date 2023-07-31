@@ -1,0 +1,512 @@
+/* Brand color accorss all the pages */
+:root {
+  --brand-primary: #533117;
+  --brand-primary-light: #F6813F;
+  --brand-secondary: #F0E9DB;
+  --brand-bg-gradient: #F6E5CE;
+  --white-text: #ffffff;
+  --black-text: #000000;
+  --grey-text: #A29F9F;
+}
+
+* {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  margin-bottom: 0;
+  height: 100%;
+}
+
+header {
+  position: absolute;
+  margin: 0;
+  width: 357px;
+  height: 100%;
+}
+
+/* Background color used accorss all the pages */
+main {
+  position: absolute;
+  left: 357px;
+  width: calc(100% - 357px);
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #FFF, var(--brand-bg-gradient));
+  overflow: auto;
+}
+
+/* side navigation background color */
+nav {
+  display: flex;
+  height: 100%;
+  background-color: var(--brand-primary);
+  flex-direction: column;
+  overflow: auto;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+/* side nav. layout */
+.side-nav {
+  display: inline-block;
+  align-self: flex-start;
+  margin: 0;
+  width: 100%;
+}
+
+.side-nav li {
+  margin: 45px 70px 20px 60px;
+}
+
+.side-nav li a {
+  color: var(--brand-secondary);
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'poppins', sans-serif;
+}
+
+/* sid nav. changed color once user slected */
+.side-nav li.selected a {
+  color: #ECBF9D;
+}
+
+.side-nav li a i {
+  padding-right: 30px;
+}
+
+.side-nav li a img {
+  padding-right: 25px;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* right corner section styling */
+.header-bar-right {
+  display: flex;
+  background-color: transparent !important;
+  margin-right: 32px;
+  margin-top: 50px;
+  padding: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header-bar-right.login-button {
+  cursor: pointer;
+}
+
+.header-bar-right>* {
+  margin-right: 8px;
+  color: var(--brand-primary);
+}
+
+.bottom-side-nav {
+  display: inline-block;
+  align-self: flex-end;
+  margin-top: auto;
+  width: 100%;
+  padding: 16px;
+  padding-left: 60px;
+}
+
+/* copyright section styling */
+.bottom-side-nav * {
+  color: var(--brand-secondary);
+}
+
+.bottom-side-nav li {
+  display: inline-block;
+}
+
+.bottom-side-nav li a i {
+  font-size: 18px;
+}
+
+.copyright {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #F0E9DB;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.copyright span {
+  font-weight: 700;
+}
+
+/* top right logo section styling */
+#logo {
+  display: inline-block;
+  width: 400px;
+  height: 100px;
+  margin: 75px 70px 0 60px;
+}
+
+#logo img {
+  margin-right: 8px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--brand-primary);
+}
+
+/* side nav. styling */
+nav ul li a:hover {
+  color: #F6813F;
+}
+
+.main-content {
+  padding: 64px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.main-content>div {
+  padding: 32px;
+}
+
+.main-content .button-wrap {
+  padding: 0 64px;
+}
+
+.main-content .cups-counter {
+  font-size: 2em;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.main-content .mg-counter {
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.main-content .coffee-cup-image {
+  margin: 24px 0;
+}
+
+.main-content .content-box {
+  background-color: #FFF;
+  color: var(--brand-primary);
+  padding: 32px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.main-content .content-box h2 {
+  color: var(--brand-primary);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.main-content .icons-set {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content .icons-set p {
+  text-align: center;
+}
+
+.main-content .icons-set>div {
+  display: inline;
+  padding: 8px;
+}
+
+.main-content .icons-set div.icon-set-icon {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* third interactive section images set */
+.main-content .icons-set div.headache-icon {
+  background-image: url('../imgs/symptoms/headaches.svg');
+}
+
+.main-content .icons-set div.headache-icon:hover {
+  background-image: url('../imgs/symptoms/headaches-hover.svg');
+}
+
+.main-content .icons-set div.sweat-icon {
+  background-image: url('../imgs/symptoms/sweat.svg');
+}
+
+.main-content .icons-set div.sweat-icon:hover {
+  background-image: url('../imgs/symptoms/sweat-hover.svg');
+}
+
+.main-content .icons-set div.other-icon {
+  background-image: url('../imgs/symptoms/other.svg');
+}
+
+.main-content .icons-set div.other-icon:hover {
+  background-image: url('../imgs/symptoms/other-hover.svg');
+}
+
+.main-content .icons-set div.coffee-icon {
+  background-image: url('../imgs/coffee-button.svg');
+}
+
+.main-content .icons-set div.coffee-icon:hover {
+  background-image: url('../imgs/coffee-button-hover.svg');
+}
+
+.logged-area {
+  display: none;
+}
+
+/* Orange color button accorss homepage */
+button.primary-button {
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--brand-primary-light);
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.primary-button:disabled {
+  cursor: auto;
+  opacity: .5;
+}
+
+/* Fun facts section styling */
+.coffee-chip {
+  cursor: pointer;
+}
+
+.coffee-chip:hover {
+  border: 1px solid var(--brand-primary);
+  background-color: white;
+}
+
+.coffee-chip.selected {
+  border-radius: 8px;
+  border: 1px solid var(--brand-primary);
+  background-color: white;
+}
+
+.coffee-chip p {
+  margin: 0;
+  font-size: 0.5em;
+}
+
+.coffee-chip p strong {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.coffee-chip img {
+  width: 128px;
+  height: 128px;
+}
+
+.add-coffee-button {
+  margin-top: 12px;
+}
+
+#modal-wrapper {
+  display: none;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.coffee-cup-image {
+  position: relative;
+  width: 30%;
+  height: 600px;
+}
+
+.coffee-cup-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.coffee-cup-image img:not(:first-child) {
+  animation: fadeIn 3s;
+}
+
+/* Animation after added coffee consumption */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* feedback-bar styling */
+.footer-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  width: 800px;
+  margin-left: -400px;
+  border-radius: 16px;
+  background-color: var(--brand-primary-light);
+  color: white;
+  padding: 24px 16px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+.footer-message a {
+  text-decoration: none;
+  color: white;
+}
+
+/* speech buddle message beside coffee cup styling  */
+.good-job-dialog {
+  background-color: white;
+  padding: 12px;
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+  margin-right: -250px;
+  border-radius: 16px;
+  color: black;
+
+  /* the radius */
+  --r: 25px;
+  /* the size of the tail */
+  --t: 30px;
+  --_d: 0%;
+
+/* https://freefrontend.com/css-speech-bubbles/  */
+  -webkit-mask:
+    radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+    conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r)/-2) calc(var(--r)/-2) padding-box,
+    radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
+
+  border-left: var(--t) solid #0000;
+  place-self: start;
+
+  outline: 1px solid var(--brand-primary-light);
+}
+
+.good-job-dialog p, .bad-job-dialog p  {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.good-job-dialog .title, .bad-job-dialog .title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--brand-primary-light);
+}
+
+.bad-job-dialog .title {
+  color: white;
+}
+
+/* alert speech bubble */
+.bad-job-dialog {
+  padding: 12px;
+  z-index: 1;
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  margin-right: -360px;
+  border-radius: 16px;
+
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(#FEBABA,#D13A3A);
+}
+
+#modal-wrapper-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* pop up screen styling */
+#modal {
+  position: absolute;
+  width: 600px;
+
+  border-radius: 16px;
+  border: 2px solid var(--brand-bg-gradient);
+  background-image: linear-gradient(to bottom right, #FFF, var(--brand-bg-gradient));
+
+  padding: 32px;
+  opacity: 1;
+
+  color: var(--brand-primary);
+  z-index: 1;
+}
+
+#modal .header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#modal .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 24px;
+  font-size: 2em;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+#modal .content {
+  text-align: center;
+}
+
+#modal .content h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#modal .error {
+  color: red;
+}
